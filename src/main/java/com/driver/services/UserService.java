@@ -6,6 +6,6 @@ import com.driver.model.User;
 public interface UserService {
 
 	void deleteUser(Integer userId);
-	User updatePassword(Integer userId, String password);
+	User updatePassword(Integer userId, String password) throws Exception;
     void register(String name, String phoneNumber, String password);
 }

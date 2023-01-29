@@ -20,8 +20,10 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public User updatePassword(Integer userId, String password) {
+    public User updatePassword(Integer userId, String password) throws Exception {
         User user = userRepository4.getOne(userId);
+        if(user==null)
+            throw new Exception();
         user.setPassword(password);
         userRepository4.save(user);
         return user;

@@ -18,7 +18,7 @@ public class UserController {
     }
 
     @PutMapping("/update")
-    public ResponseEntity<User> updatePassword(@RequestParam Integer userId, @RequestParam String password){
+    public ResponseEntity<User> updatePassword(@RequestParam Integer userId, @RequestParam String password) throws Exception {
         User updatedUser = userService.updatePassword(userId,password);
         return new ResponseEntity<>(updatedUser, HttpStatus.OK);
     }
