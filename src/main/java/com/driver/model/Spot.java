@@ -62,11 +62,11 @@ public class Spot {
         this.occupied = occupied;
     }
 
-    public ParkingLot getParkinglot() {
+    public ParkingLot getParkingLot() {
         return parkinglot;
     }
 
-    public void setParkinglot(ParkingLot parkinglot) {
+    public void setParkingLot(ParkingLot parkinglot) {
         this.parkinglot = parkinglot;
     }
 

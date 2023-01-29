@@ -27,6 +27,7 @@ public class ParkingLot {
     public ParkingLot() {
     }
 
+
     public int getId() {
         return id;
     }
