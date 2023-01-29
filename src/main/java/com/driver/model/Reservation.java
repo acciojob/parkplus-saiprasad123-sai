@@ -9,7 +9,7 @@ public class Reservation {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
-    private int noOfHours;
+    private int NumberOfHours;
 
     @ManyToOne
     @JoinColumn
@@ -22,16 +22,16 @@ public class Reservation {
     @OneToOne(mappedBy = "reservation",cascade = CascadeType.ALL)
     private Payment payment;
 
-    public Reservation(int id, int noOfHours, User user, Spot spot, Payment payment) {
+    public Reservation(int id, int NumberOfHours, User user, Spot spot, Payment payment) {
         this.id = id;
-        this.noOfHours = noOfHours;
+        this.NumberOfHours = NumberOfHours;
         this.user = user;
         this.spot = spot;
         this.payment = payment;
     }
 
     public Reservation(int noOfHours) {
-        this.noOfHours = noOfHours;
+        this.NumberOfHours = noOfHours;
     }
 
     public Reservation() {
@@ -45,12 +45,12 @@ public class Reservation {
         this.id = id;
     }
 
-    public int getNoOfHours() {
-        return noOfHours;
+    public int getNumberOfHours() {
+        return NumberOfHours;
     }
 
-    public void setNoOfHours(int noOfHours) {
-        this.noOfHours = noOfHours;
+    public void setNumberOfHours(int noOfHours) {
+        this.NumberOfHours = noOfHours;
     }
 
     public User getUser() {
