@@ -32,6 +32,8 @@ public class Payment {
         this.paymentMode = paymentMode;
     }
 
+
+
     public int getId() {
         return id;
     }
@@ -64,3 +66,4 @@ public class Payment {
         this.reservation = reservation;
     }
 }
+
